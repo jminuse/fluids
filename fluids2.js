@@ -70,6 +70,7 @@ function display() {
 function add_sources(target, source, dt) {
 	for(var i=0; i<target.length; i++) {
 		target[i] += source[i]*dt;
+		source[i] = 0.0;
 	}
 }
 
